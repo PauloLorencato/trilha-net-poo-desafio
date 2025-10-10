@@ -1,16 +1,14 @@
 ﻿using DesafioPOO.Models;
 
-var iphone = new Iphone("11922446688", "iPhone 14", "IMEI123456789", 2048);
-var nokia = new Nokia("11988664422", "Nokia Phone", "IMEI987654321", 1024);
-
-// Testa métodos herdados no Iphone
-Console.WriteLine($"Testando funcionalidades {iphone.Modelo}");
-iphone.Ligar();
-iphone.ReceberLigacao();
-iphone.InstalarAplicativo("Instagram");
-
-// Testa métodos herdados no Nokia
-Console.WriteLine($"Testando funcionalidades {nokia.Modelo}");
+Console.WriteLine("Smartphone Nokia");
+var nokia = new Nokia("123456", "Modelo 1", "1111111111", 64);
 nokia.Ligar();
-nokia.ReceberLigacao();
-nokia.InstalarAplicativo("Facebook");
+nokia.InstalarAplicativo("Whatsapp");
+
+Console.WriteLine("\n");
+
+Console.WriteLine("Smartphone Iphone");
+var iphone = new Iphone("4987", "Modelo 2", "22222222222", 128);
+iphone.ReceberLigacao();
+iphone.InstalarAplicativo("Telegram");
+
